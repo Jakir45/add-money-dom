@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo mfs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+
+                <!-- account balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Account Balance</div>
+                      <div id="balance" class="stat-value">9400</div>
+                     
+                  </div>
+                  
+                <!-- features -->
+              </div>
+              <div class="divider"></div>
+              <!-- featuees start -->
+
+              <div>
+                <button id="show-add-money" class="btn btn-lg">Add money</button>
+                <button id="show-cash-out" class="btn btn-lg">cash out</button>
+                <button id="show-trans" class="btn btn-lg">Transactions</button>
+
+              </div>
+              <!-- features end -->
+              <div class="divider"></div>
+
+              <!-- from start -->
+              <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text tex">Add money Amount</span>
+                    </label>
+                    <input id="add-money" autocomplete="off" type="email" placeholder="Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span  class="label-text">Pin Number</span>
+                    </label>
+                    <input id="pin-number" type="password" placeholder="Pin Number" autocomplete="off" class="input input-bordered " required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                  </div>
+                </form>
+              </div>
+              <div id="cash-out-form" class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text tex">cash out  Amount</span>
+                    </label>
+                    <input id="cash-out-money" autocomplete="off" type="email" placeholder=" cash out Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span  class="label-text">Pin Number</span>
+                    </label>
+                    <input id="cash-pin-number" type="password"  placeholder="Pin Number" autocomplete="off" class="input input-bordered " required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-cash-money" class="btn btn-primary">cash out</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+               <!-- from end -->
+                <!-- cash out form start -->
+
+                
+                 <!-- cash out form end
+                   -->
+            </div>
+          </div>
+    </main>
+    <script src="./features.js"></script>
+    <script src="./cashout.js"></script>
+    <script src="./utilites2.js"></script>
+    
+    <script src="./addmoney2.js"></script>
+</body>
+</html>
