@@ -10,7 +10,10 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
         const totaltaka =total +totalnumber;
         document.getElementById('balance').innerText = totaltaka
 
-        console.log(totaltaka)
+        const p =document.createElement('p');
+        p.innerText = `add: ${totalnumber} tk. New Balance :${totaltaka}`
+        document.getElementById('newadd').appendChild(p)
+        console.log(p)
     }
     console.log(totalnumber,pinNumber)
 })

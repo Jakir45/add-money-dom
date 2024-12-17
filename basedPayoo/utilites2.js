@@ -12,5 +12,7 @@ function getTextFieldValueById(id){
 function showSection(id){
     document.getElementById('add-money-form').classList.add('hidden');
     document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('show-add').classList.add('hidden');
+    document.getElementById('show-cash').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden')
 }
